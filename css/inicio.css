@@ -131,7 +131,7 @@ footer {
         height: 5cm;
         width: 5cm;
         left: 90px;
-        top: 5cm;
+        top: 3cm;
     }
     .box{
         width: 80%;  
@@ -172,6 +172,6 @@ footer {
     }
     footer {
         left: 60px;
-        bottom: 5%; 
+        bottom: 0; 
      }
 }
