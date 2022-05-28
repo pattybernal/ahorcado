@@ -1,0 +1,177 @@
+/*ESTILOS PARA LA PAGINA DE INICIO*/
+main{
+	margin: auto;
+	width:auto;
+	height: 700px;
+	background: rgb(242, 213, 167);
+    border-radius: 20px;
+}
+
+.logo{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    bottom: 0px;
+}
+
+#name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1cm;
+    color: #2a4a71;
+    font-weight: bold;
+    position: relative;
+    left: 450px;
+    top: 30px;
+}
+
+#imgIndex {
+    position: absolute;
+    height: 10cm;
+    width: 10cm;
+    top: 5cm;
+    left: 12cm;  
+}
+
+.box {
+    background: #ddca85; 
+    border: 4px solid #615839;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 23px -2px rgba(89, 75, 29, 1), inset 5px 5px 56px 4px #998746;
+    width: 37%;  
+    text-align:center ; 
+    position: absolute;
+    left: 30%; 
+    top: 20%;
+    display: none;
+    z-index: 1;
+ }
+
+.box h2 {
+     -webkit-text-stroke: 1px #000;
+     color: #f0e892;
+     font-family: 'Alfa Slab One', cursive;
+     font-size: 46px;
+     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+     text-transform: uppercase;
+}
+  
+.box p{
+     font-family: 'Bitter', serif;
+     font-size: 15px;
+     font-weight: bold;
+ }
+ 
+ #instrucciones {
+    font-weight: 700;
+    font-size: 20px;
+}
+ 
+#btnCerrar {
+     -webkit-text-stroke: 1px #000;
+     background: linear-gradient(to bottom, #5a89d5 5%, #6cc1ba 100%);
+     border: 1px solid #615839;
+     border-radius: 5px;
+     box-shadow: inset 0 1px 3px 0 #000;
+     color: #df7f52;
+     font-family: 'Alfa Slab One', cursive;
+     font-size: 1.5em;
+     padding: 17px 51px;
+     text-decoration: none;
+     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+     text-transform: uppercase;
+     cursor: pointer;
+}
+
+#btnAbrir, #btnJugar, #btnAgregar {
+    -webkit-text-stroke: 1px #000;
+    background: linear-gradient(to bottom, #5a89d5 5%, #6cc1ba 100%);
+    border: 1px solid #615839;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px 0 #000;
+    color: #df7f52;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding: 17px 51px;
+    text-decoration: none;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-transform: uppercase;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#btnSalir:hover, #btnAbrir:hover, #btnJugar:hover, #btnAgregar:hover {
+    background: linear-gradient(to bottom, #74855d 65%, #7f6f3a 100%);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+
+@media screen and ( max-width: 420px )  {
+    main{
+        top: inherit;
+        left: inherit; 
+    }
+    .logo{
+        position: absolute;
+        width: 2cm;
+        left: 10px;   
+    }
+    #name{
+        position: absolute;
+        font-size: 20px; 
+        left: 100px; 
+    }
+    #imgIndex{
+        position: relative;
+        height: 5cm;
+        width: 5cm;
+        left: 90px;
+        top: 5cm;
+    }
+    .box{
+        width: 80%;  
+        text-align:center ; 
+        position: absolute;
+        left: 10%; 
+        top: 20%;
+        display: none;
+        
+    }
+    .box h2{
+        font-size: 20px;   
+    }
+    .box p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #btnCerrar {
+        font-size: 1em;
+        width:4.5cm;
+        padding: 8px 24px;
+        box-shadow: none;
+        text-shadow: none;
+        color: black;
+        font-weight: 800;
+        margin: 10px;
+    }
+    #btnAbrir, #btnJugar, #btnAgregar {
+        font-size: 1em;
+        width:4.5cm;
+        padding: 8px 24px;
+        box-shadow: none;
+        text-shadow: none;
+        color: black;
+        font-weight: 800;
+        display: block;
+        margin: 10px;
+    }
+    footer {
+        left: 60px;
+        bottom: 5%; 
+     }
+}

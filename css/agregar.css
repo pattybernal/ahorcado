@@ -1,0 +1,150 @@
+main {
+	margin: auto;
+	width:auto;
+	height: 700px;
+	background: rgb(242, 213, 167);
+    border-radius: 20px;
+}
+
+header{
+    background: linear-gradient(to bottom, #d2ea66 20%, #998746 100%);;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 0;
+    color: rgb(13, 13, 13);
+}
+
+#figura{
+    left: 50px;
+    position: absolute;
+    top: 3em;  
+}
+
+#inputWord {
+    position: relative;
+    width: 500px;
+    height: 80px;
+    left: 450px;
+    top: 150px;
+    color:rgb(12, 12, 12);
+    font-size: 30px;
+    background:none;
+    border: none;
+    border-radius: 20px;
+    font-weight:bold;
+    outline: none;
+    resize: none;
+}
+
+::placeholder {
+    color:#63686e;
+    font-size: 30px;
+    font-style:normal;
+    font-weight:bold; 
+}
+
+#mensaje{
+    position:absolute;
+    width: 400px;
+    height: 50px;
+    left: 450px;
+    top: 470px;
+    color: #2b2727;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnSalvar, #btnJugar, #btnCancelar {
+    -webkit-text-stroke: 1px #000;
+    background: linear-gradient(to bottom, #5a89d5 5%, #6cc1ba 100%);
+    border: 1px solid #615839;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px 0 #000;
+    color: #df7f52;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding: 17px 51px;
+    text-decoration: none;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-transform: uppercase;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#btnSalvar:hover, #btnJugar:hover, #btnCancelar:hover  {
+    background: linear-gradient(to bottom, #74855d 65%, #7f6f3a 100%);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+
+@media screen and ( max-width: 420px ){
+    main{
+        top: inherit;
+        left: inherit; 
+    }
+    #figura{
+        width: 2cm;
+        left: 40%;
+        position: absolute;
+        top: 100px; 
+    }
+   
+    #inputWord{
+        left: 50px;
+        font-size: 20px;
+        position: absolute;
+        top: 300px;  
+    }
+    #mensaje{
+        height: 50px;
+        left: 50px;
+        top: 480px;
+        font-size: 15px;
+        font-weight: bold;  
+    }
+    #btnJugar, #btnCancelar {
+        font-size: 1em;
+        width:4.5cm;
+        padding: 8px 24px;
+        box-shadow: none;
+        text-shadow: none;
+        color: black;
+        font-weight: 800;
+        display: block;
+        margin: 10px; 
+        display: block;
+        margin: 10px;
+    }
+    #btnSalvar{
+        font-size: 1em;
+        padding: 8px 20px;
+        box-shadow: none;
+        text-shadow: none;
+        color: black;
+        font-weight: 800;
+        display: block;
+        margin: 10px; 
+        display: block;
+        margin: 10px;
+    }
+
+    footer {
+        left: 60px;
+        bottom: 0; 
+    }
+}
+
+
+
+

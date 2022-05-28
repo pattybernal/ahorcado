@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agregar.css" />
+    <link  rel="icon"   href="img/favicon.ico" type="icon" />
+    <title>Agrega palabra</title>
+</head>
+<body>
+    <header>
+        <h1>¡ Juego del ahorcado !</h1>
+    </header>
+    
+    <main>
+      <div class="add-words-container hide">
+        <form id="nuevaPalabra">
+          <input
+            type="text" name=""  id="inputWord" maxlength="12"
+            placeholder="Ingrese una palabra"
+            autocomplete="off"
+          ></input>
+        </form>
+        <div class="add-words-info">
+          <img src="./assets/img/info.png" alt="" /> 
+          <p id="mensaje"> <img src="./img/exclamacion.svg" alt=""> Solo  mayúsculas y máximo 12 letras</p>
+        </div>
+
+        <h2><img  id="figura" src="img/feliz.png" ></h2>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+          <button type="submit" id="btnSalvar" onclick="validar();">GUARDAR PALABRA</button>
+          <a href="juego.html" id="btnJugar" class="buttonAdd">NUEVO JUEGO</a>
+          <a href="inicio.html" id="btnCancelar" class="buttonCancel">SALIR</a>
+          
+      </div>
+    </footer>         
+
+<script src="js/agregar.js"></script>
+</body>
+</html>
+
+

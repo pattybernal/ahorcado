@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link  rel="icon"   href="img/favicon.ico" type="icon" />
+    <title>Juego del ahorcado</title>
+</head>
+<body>
+    <main class="principal">
+        <header>
+            <h1><a href="https://www.aluracursos.com/"> <img class="logo" src="img/logo.png" alt="logo" ></a></h1>	
+            <p id="name">¡ Juego del ahorcado !</p>
+        </header>
+        <div class="imgIndex">
+            <img src="img/muneco.png" alt="muñeco" id="imgIndex" >
+          </div>
+            
+          <div class="box" id="caja">
+            <p ><p id="instrucciones">INSTRUCCIONES</p>
+                <p>*Tienes de 10 intentos para acertar la palabra oculta.</p>
+                <p>*Cada vez que pulses una letra se irá deshabilitando en el teclado para que no la pulses dos veces.</p>
+                <p>*Tienes que pulsar el botón "NUEVO JUEGO" para empezar y habilitar el teclado al igual que cuando ganes o pierdas.
+                <p>*Al pulsar el botón "SALIR" regresarás al inicio..</p>
+                <p>*Al pulsar el logo de Alura te enviará a la página y para volver al juego debes pulsar la flecha atrás del navegador.</p>
+            </p>
+            <br>
+            <div>
+                <a href="javascript:cerrar()" id="btnCerrar" class="buttonClose">Cerrar</a>    
+            </div>
+        </div>
+        
+  
+
+        <footer>
+            <div>
+                <a href="javascript:abrir()" id="btnAbrir">Instrucciones</a>
+                <a href="juego.html" id="btnJugar">Nuevo juego</a>
+                <a href="agregar.html" id="btnAgregar">Añadir palabra</a>
+            </div>
+        </footer>
+        
+        <!-- Para funcionalidad de la ventana emergente de instrucciones-->
+        <script>
+            function abrir() {
+                document.getElementById("caja").style.display="block";
+            }
+            function cerrar() {
+                document.getElementById("caja").style.display="none";
+            }
+        </script>
+ 
+   
+              
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript" src="js/juego.js"></script>   
+    </main>
+</body>
+</html>
